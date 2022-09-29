@@ -1,0 +1,232 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300 ;600&display=swap);
+
+* {
+    margin:0;
+    padding:0;
+}
+body{
+    background: #e2e8f0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+
+}
+ a{
+     text-decoration:none;
+     transition: color 500ms ease;
+     color: #100e0e;
+ }
+ a:hover{
+     color:black;
+ }
+ .container{
+     width: 1258px;
+     margin: 0 auto;
+ }
+ header.container{
+     display:flex;
+     justify-content:space-between;
+     align-items: center;
+     margin-top: 0px;
+     margin-bottom: 30px;
+     background: #ffffff;
+     padding-bottom: 30px;
+     padding-top: 30px;
+     padding-left: 20px;
+     padding-right: 20px;
+ }
+span.logo{
+    color: #100e0e;
+    font-weight: 600;
+    font-size: 25px;
+}
+header nav a{
+    margin-left: 15px;
+}
+.presentation{
+    background: url('/img/news.jpeg') no-repeat;
+    width: 100%;
+    height: 1000px;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: multiply;
+    background-color: #6b7280;
+}
+.presentation:after{
+    content: 'Лучшие новости со всего мира!';
+    position: absolute;
+    top: 350px;
+    left: 700px;
+    color: white;
+    font-size: 45px;
+    font-weight: 600;
+    width: 400px;
+}
+.presentation:before{
+    content: 'Только самое интересное!';
+    position: absolute;
+    top: 570px;
+    left: 700px;
+    color: white;
+    font-size: 15px;
+ }
+
+div.block{
+
+    width: 1050px;
+    padding: 20px;
+    border: 1px solid silver;
+    border-bottom-width: 2px;
+    background: #9ce0f5;
+    line-height: 170%;
+    margin:0 auto;
+    margin-bottom:20px;
+
+}
+div a.btn{
+    display:block;
+    margin-top: 20px;
+    width: 90px;
+    padding: 10px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    background: #acfe08;
+    color: white;
+
+
+
+}
+div.block h1{
+    margin-bottom: 15px;
+}
+div.block ul,div.block ol{
+    margin-bottom: 10px;
+    width: 100%;
+    margin-left: 5%;
+}
+header nav a.btn{
+    padding: 5px;
+    border: 1px solid lightskyblue;
+    border-radius: 5px;
+    transition:all 500ms ease;
+    color:lightskyblue ;
+}
+.articles{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.articles .post{
+    width: 27%;
+    padding: 20px;
+    background: #6b7280;
+    margin-bottom: 20px;
+}
+.articles .post a,
+.back-button,
+.delete-button {
+    display: inline-block;
+    margin-top: 15px;
+    background: red;
+    border-radius: 5px;
+    padding: 10px 12px;
+    color: white;
+    transition: transform 500ms ease;
+}
+.articles .post a:hover,
+.back-button:hover,
+.delete-button:hover {
+    transform: scale(1.1) translateY(-2px);
+}
+.delete-button{
+    background: red;
+    border:0;
+    cursor: pointer;
+}
+.articles.one .post{
+    width:100%;
+    border:1px solid silver;
+    border-bottom-width: 6px;
+
+}
+form.article-form{
+    margin-top: 20px;
+}
+form.article-form label{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+form.article-form input,
+form.article-form textarea{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid silver;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+form.article-form input[type='submit']{
+    margin-top: 20px;
+    cursor: pointer;
+    background: red;
+    width: 100px;
+    color: white;
+    border: 0;
+    transition: all 500ms ease;
+}
+form.article-form input[type='submit']:hover{
+    background: green;
+}
+.error-mess,.success-mess{
+    padding: 15px 20px;
+    color:white;
+    margin-bottom: 20px;
+}
+.error-mess{
+    background: red;
+}
+.success-mess{
+    background: blue;
+}
+.shop{
+    display: flow;
+     margin-top: 50px;
+}
+.shop .post{
+    width: 90%;
+    padding: 20px;
+    background: #11a1c1;
+    margin-bottom: 40px;
+}
+.shop .post a,
+.back-button,
+.delete-button {
+    display: inline-block;
+    margin-top: 15px;
+    background: #d0ff00;
+    border-radius: 5px;
+    padding: 10px 12px;
+    color: white;
+    transition: transform 500ms ease;
+}
+.shop .post a:hover,
+.back-button:hover,
+.delete-button:hover {
+    transform: scale(1.1) translateY(-2px);
+}
+.shop .post h2,
+.post p
+ {
+    margin-top: 15px;
+    padding: 10px 12px;
+    transition: transform 500ms ease;
+}
+
+footer{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+
+}
+
